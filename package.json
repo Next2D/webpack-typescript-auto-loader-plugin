@@ -1,0 +1,29 @@
+{
+  "name": "@next2d/webpack-typescript-auto-loader-plugin",
+  "description": "Next2D Framework webpack TypeScript Auto Loader plugin.",
+  "version": "0.0.1",
+  "author": "Toshiyuki Ienaga <ienaga@tvon.jp>",
+  "license": "MIT",
+  "main": "index.js",
+  "homepage": "https://next2d.app",
+  "bugs": "https://github.com/Next2D/webpack-typescript-auto-loader-plugin/issues",
+  "keywords": [
+    "Next2D",
+    "Next2D Framework",
+    "webpack",
+    "webpack-typescript-auto-loader-plugin"
+  ],
+  "scripts": {
+    "lint": "eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Next2D/webpack-typescript-auto-loader-plugin.git"
+  },
+  "dependencies": {
+    "@types/node": "^16.9.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0"
+  }
+}
