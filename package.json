@@ -1,7 +1,7 @@
 {
   "name": "@next2d/webpack-typescript-auto-loader-plugin",
   "description": "Next2D Framework webpack TypeScript Auto Loader plugin.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Toshiyuki Ienaga <ienaga@tvon.jp>",
   "license": "MIT",
   "main": "index.js",
