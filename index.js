@@ -231,7 +231,7 @@ module.exports = class Next2DWebpackTypeScriptAutoLoaderPlugin
 
             fs.writeFileSync(
                 `${dir}/src/config/Config.ts`,
-                `import { ConfigImpl } from "@next2d/framework/dist/interface/ConfigImpl"; 
+                `import { ConfigImpl } from "@next2d/framework/dist/interface/ConfigImpl";
 const config: ConfigImpl = ${JSON.stringify(config, null, 4)};
 export { config };`
             );
@@ -262,7 +262,7 @@ export { config };`
                 switch (true) {
 
                     case path.indexOf("src/view/") > -1:
-                        imports  += `import { ${name} } from "/src/${path.split("src/")[1].split(".ts")[0]}";${os.EOL}`;
+                        imports  += `import { ${name} } from "@/${path.split("src/")[1].split(".ts")[0]}";${os.EOL}`;
                         packages += `    ["${name}", ${name}],${os.EOL}`;
                         break;
 
@@ -280,7 +280,7 @@ export { config };`
                                 .join("_")
                                 .slice(0, -3);
 
-                            imports  += `import { ${name} as ${asName} } from "/src/${path.split("src/")[1].split(".ts")[0]}";${os.EOL}`;
+                            imports  += `import { ${name} as ${asName} } from "@/${path.split("src/")[1].split(".ts")[0]}";${os.EOL}`;
                             packages += `    ["${key}", ${asName}],${os.EOL}`;
                         }
                         break;
