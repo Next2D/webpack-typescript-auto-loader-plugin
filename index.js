@@ -231,7 +231,7 @@ module.exports = class Next2DWebpackTypeScriptAutoLoaderPlugin
 
             fs.writeFileSync(
                 `${dir}/src/config/Config.ts`,
-                `import { ConfigImpl } from "@next2d/framework/dist/interface/ConfigImpl";
+                `import type { ConfigImpl } from "@next2d/framework";
 const config: ConfigImpl = ${JSON.stringify(config, null, 4)};
 export { config };`
             );
